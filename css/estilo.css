@@ -159,8 +159,7 @@ h1 span {
 	#nome {
 		font-family: 'exo_2thin', Arial, sans-serif;
 		font-size: 1.16em;
-		color: green;
-		/*color: #FF530D;*/
+		color: #FF530D;
 	}
 	h2 {
 		font-family: 'exo_2bold', Arial, sans-serif;
