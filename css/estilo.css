@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'exo_2thin';
+    src: url('../fonte/exo2-thin-webfont.eot');
+    src: url('../fonte/exo2-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonte/exo2-thin-webfont.woff2') format('woff2'),
+         url('../fonte/exo2-thin-webfont.woff') format('woff'),
+         url('../fonte/exo2-thin-webfont.ttf') format('truetype'),
+         url('../fonte/exo2-thin-webfont.svg#exo_2thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exo_2bold';
+    src: url('../fonte/exo2-bold-webfont.eot');
+    src: url('../fonte/exo2-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonte/exo2-bold-webfont.woff2') format('woff2'),
+         url('../fonte/exo2-bold-webfont.woff') format('woff'),
+         url('../fonte/exo2-bold-webfont.ttf') format('truetype'),
+         url('../fonte/exo2-bold-webfont.svg#exo_2bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'titillium_webregular';
+    src: url('../fonte/titilliumweb-regular-webfont.eot');
+    src: url('../fonte/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonte/titilliumweb-regular-webfont.woff2') format('woff2'),
+         url('../fonte/titilliumweb-regular-webfont.woff') format('woff'),
+         url('../fonte/titilliumweb-regular-webfont.ttf') format('truetype'),
+         url('../fonte/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'titillium_weblight';
+    src: url('../fonte/titilliumweb-light-webfont.eot');
+    src: url('../fonte/titilliumweb-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonte/titilliumweb-light-webfont.woff2') format('woff2'),
+         url('../fonte/titilliumweb-light-webfont.woff') format('woff'),
+         url('../fonte/titilliumweb-light-webfont.ttf') format('truetype'),
+         url('../fonte/titilliumweb-light-webfont.svg#titillium_weblight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'titillium_webbold';
+    src: url('../fonte/titilliumweb-bold-webfont.eot');
+    src: url('../fonte/titilliumweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonte/titilliumweb-bold-webfont.woff2') format('woff2'),
+         url('../fonte/titilliumweb-bold-webfont.woff') format('woff'),
+         url('../fonte/titilliumweb-bold-webfont.ttf') format('truetype'),
+         url('../fonte/titilliumweb-bold-webfont.svg#titillium_webbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
+	font-style: normal;margin:0; padding:0; list-style:none; vertical-align:baseline;
+}
+body{
+	font-family: 'titillium_weblight', Arial, sans-serif;
+	font-size: 0.86em; /* Todas os tamanhod de fonte estão condicionados à este valor já que body é o elemento pai de todos tos textos se for de interesse reduzir as fontes somente com um comando mantendo a relação entre os pesos de título o melhor lugar para isso é aqui */
+	color: #232F36;
+	background-color: #2E1D16;
+}
+/***************** REGRAS ESTRUTURAIS *************************/
+#conteudo {
+	position: absolute; 
+	width: 50%; left: 25%; /* IMPORTANTE - Esta linha é que determina o posicionamento e a largura para todos os elementos */
+}
+	#inicio, #contatos, #formacao, #rede { width: 100%;position: absolute;} /* nunca precisa ser modificada*/
+	#contatos, #formacao, #rede { position: absolute; width: 100%; height: 100%;}
+
+	/* Ajustes para responsivo */
+		#cabecalho, #introducao, .pseudo_pagina1, .pseudo_pagina2, .pseudo_pagina3 {padding: 20px 15%; overflow-x: hidden;}/*somente para o alinhamento à esquerda*/
+	
+		#inicio { height: 380px; overflow: hidden;} /* CINZA - Altura do elemento fixo do topo*/
+		.pseudo_pagina1 { top: 762px; height: 380px; z-index: 20} /* CONTATO */
+		.pseudo_pagina2 { top: 381px; height: 380px; z-index: 20} /* FORMAÇÃO */
+		.pseudo_pagina3 { top: 381px; height: 380px; z-index: 20} /* rede */
+
+	/* Final Ajustes para responsivo */
+
+/***************** FIM REGRAS ESTRUTURAIS *************************/
+
+#inicio {
+	background: url('../img/texture.png') repeat #5C5C5C;
+	z-index: 2;
+		border-radius: 0 0 10px 10px;
+		-webkit-border-radius: 0 0 10px 10px;
+}
+	#cabecalho {
+		position: absolute;
+		width: 100%;
+	}
+		#avatar { left: 15px; top: 17px} /* para alinhamento do campo avatar */
+
+	#introducao { /* não é uma área e sim o campo do texto introdutório */
+		position: absolute;
+		top: 80px;
+	}
+	.pseudo_pagina1 , .pseudo_pagina2, .pseudo_pagina3 {
+		background: url('../img/texture.png') repeat #618398;
+		position: absolute;
+		width: 100%;
+			-webkit-border-radius: 10px 10px 10px 10px;
+			border-radius: 10px 10px 10px 10px;
+	}
+	.pseudo_pagina3 {
+		background: url('../img/texture.png') repeat #969696;
+		position: absolute;
+		width: 100%;
+			-webkit-border-radius: 10px 10px 10px 10px;
+			border-radius: 10px 10px 10px 10px;
+	}
+		.area_util {
+			width: 100%;
+			height: 100%;
+			/*overflow-y: scroll;*/
+		}
+
+/***************** NAVEGACAO *************************/
+
+	nav li {display: inline-block;}
+	#principal a {padding-right: 20px;}
+
+	/*Botoes de compartilhamento */
+	#compartilhamento li {
+		height: 50px;
+		width: 50px;
+		border: 2px solid #BDD4DE ;
+			-webkit-border-radius: 40px 40px 40px 40px;
+			border-radius: 40px 40px 40px 40px;
+	}
+	#compartilhamento li:hover {background-color: #618398;}
+		img[class="branco"] { width: 45px; height: 45px;}
+
+		li[title="facebook"], li[title="google+"], li[title="linkedin"] { background-repeat: no-repeat; background-position: center; }
+
+		li[title="facebook"] { background-image: url("../img/facebook.svg"); background-size: auto; }
+		li[title="google+"] { background-image: url("../img/google.svg"); background-size: 55%; }
+		li[title="linkedin"] { background-image: url("../img/linked.svg"); background-size: 60%;}
+
+/***************** Títulos *************************/
+h1 span {
+	font-family: 'exo_2bold', Arial, sans-serif;
+	font-size: 1.12em;
+	text-transform: uppercase;
+	padding-right: 8px;
+	color:#232F36;
+}
+
+	#nome {
+		font-family: 'exo_2thin', Arial, sans-serif;
+		font-size: 1.16em;
+		color: #FF530D;	
+	}
+	h2 {
+		font-family: 'exo_2bold', Arial, sans-serif;
+		font-size: 1em;
+		text-transform: uppercase;
+		padding-top: 30px;
+	}
+	.pseudo_pagina2 h2:first-of-type, .pseudo_pagina3 h2:first-of-type { padding-top: 0px; } /* remove o espaçamento antes primeiro título */
+
+	h3 {
+		font-family: 'titillium_webregular', Arial, sans-serif;
+		font-size: 1em;
+		padding-top: 20px;
+	}
+	#avatar {
+		width: 68px;
+		height: 68px;
+		position: absolute;
+		border-radius: 10px;
+		background: url('../img/avatar.png') no-repeat ;
+		background-position: center;
+		background-size: 100% 100%;
+	}
+	#compartilhamento {
+		padding-top: 15px;
+	}
+#inicio p {
+	padding-top: 10px;
+}
+
+/***************** LINKS *************************/
+a { text-decoration: none; color: #BDD4DE; }
+a:hover { color:#232F36; }
+a:active { color:#EFEFEF; }
+
+/***************** FORMULÁRIO *************************/
+#contato { padding-top: 10px;}
+.linha { width: 90%; height: 35px; margin-top: 10px;} /* os de todo o formulário estao nesta classe */
+div[class="linha"]:nth-child(3) { padding-top: 7px;} 
+
+	.titulo_form { width: 20%; height: 35px; display: inline-block; text-align: right; font-family: "titillium_webbold",Arial,sans-serif; font-size: 1em; padding-right: 10px;}
+	input[type="text"], input[type="email"], textarea[name="msg"] { width: 60%; background-color: #BDD4DE; border-radius: 5px; border: none; padding: 1%; font-family: 'titillium_weblight', Arial, sans-serif;
+	font-size: 1em;}
+	input[type="nome"], input[type="email"]{ height: 35px;}
+
+	input[type="radio"] { margin-left: 10px; margin-right: 10px;}
+	/*input[type="radio"]:first-of-type {margin-left: 0px;}*/
+
+
+	textarea[name="msg"] { height: 100px; resize: none; overflow: auto;}
+	input[type="submit"] { vertical-align: bottom; margin-left: 5px;}
+
+/***************** IMPRESSÃO *************************/
+#inicio input[type="button"] { }
+	.btn {
+		outline: none; border: none;
+		position: absolute; right: 20%; top: 4px;
+		width: 40px; height: 40px;
+		background: rgba(0,0,0,0) url('../img/print2.svg') no-repeat center center;
+		background-size: 100% ;
+		color: rgba(0,0,0,0);
+	}
+	.btn:hover {
+		outline: none; border: none;
+		position: absolute; right: 20%; top: 4px;
+		width: 40px; height: 40px;
+		background: rgba(0,0,0,0) url('../img/print1.svg') no-repeat center center;
+		background-size: 100% ;
+	}
+
+.print { display:none; } /*no css de impressão o valor para a propriedade display é invertido */
+.no-print { display:block; }/*no css de impressão o valor para a propriedade display é invertido */
+/*impressão */

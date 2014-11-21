@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:700,300);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:700,200italic,200);
+@page { margin: 4cm 2.5cm 1cm 5.5cm; }
+/* print resset */
+	* {
+	    background:transparent !important;
+	    color:#000 !important;
+	    text-shadow:none !important;
+	    /*filter:none !important;*/
+	    /*-ms-filter:none !important;*/
+	}
+     
+	body {
+	    margin:0;
+	    padding:0;
+	    line-height: 1.4em;
+	}
+/* FIM */
+
+nav, form { display:none;} /*conteúdos que não devem ser impressos*/
+a { text-decoration: none;}
+.page-break { page-break-before: always;} /*posicionado em histórioco profissional para quebra de página */
+body {font-family: 'Titillium Web', sans-serif; font-weight: 200;}
+span {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 1.12em;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+    #nome {
+        font-family: 'Exo 2', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 1.16em;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h3 { font-family: 'Titillium Web', sans-serif; font-weight: 700; font-size: 1em;}
+
+.print { display:block;} /*impressão no css para tela o valor para a propriedade dislay é invertido */
+.no-print { display:none; }/*impressão no css para tela o valor para a propriedade display é invertido */

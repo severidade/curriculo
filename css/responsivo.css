@@ -1,0 +1,42 @@
+@media only screen and (max-width: 200000px) {
+	#contatos, #formacao, #rede{
+		opacity: 0;
+		-webkit-transition: opacity .6s ease-in-out;
+		-moz-transition: opacity .6s ease-in-out;
+		-o-transition: opacity .6s ease-in-out;
+		-ms-transition: opacity .6s ease-in-out;
+		transition: opacity .6s ease-in-out;
+		z-index: -5;
+	}
+	#contatos:target, #formacao:target, #rede:target { opacity: 1; z-index: 1; }	
+	#conteudo, #corpo  {height: 761px;}
+	.pseudo_pagina1 { top: 381px; height: 380px; z-index: 20;} /* CONTATO */
+}
+
+@media only screen and (max-width: 1000px) {
+	#conteudo { width: 70%; left: 15%;}
+}
+
+@media only screen and (max-width: 740px) {
+	#conteudo { width: 90%; left: 5%;}
+}
+
+@media only screen and (max-width: 600px) {
+	#conteudo, #corpo  {height: 1142px;}
+	#conteudo { width: 100%; left: 0;} /* IMPORTANTE - Esta linha é que determina o posicionamento e a largura para todos os elementos */
+	#inicio { height: 449px; }
+
+	#contatos, #formacao, #rede { opacity: 1; z-index: 1}
+	#rede { height: 1620px;}
+	#formacao { height: 990px; }
+
+	.pseudo_pagina3 { top: 1142px; height: 478px; z-index: 20; }/* REDE DE CURRÍCULOS */
+	.pseudo_pagina2 { top: 450px; height: 540px; z-index: 20; -webkit-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; } /* FORMAÇÃO */
+	.pseudo_pagina1 { top: 990px; height: 150px; -webkit-border-radius:  0 0 10px 10px; border-radius:  0 0 10px 10px; } /* CONTATO */
+	#contato, a[href="#contatos"], a[href="#formacao"], input[name="imprimir"] {display: none;}
+
+ h1 { padding-left: 80px;}
+	h1	span { font-size: 0.9em; display: block; }
+		#nome { font-size: 0.6em; padding-left: 0px;}
+		#avatar { left: 15%; top: 20px;}
+}
